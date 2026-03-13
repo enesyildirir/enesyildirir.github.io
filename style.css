@@ -163,6 +163,17 @@ nav a:hover {
     background-color: #1d4ed8;
 }
 
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 18px;
+}
+
+.checkbox-group input {
+    width: auto;
+}
+
 /* Footer */
 footer {
     background-color: #111827;
