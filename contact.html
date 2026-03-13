@@ -72,18 +72,18 @@ LinkedIn
 </aside>
 
 </main>
-
 <div class="contact-container">
     <h2>İletişim Formu</h2>
     <form action="#" method="post">
+
         <label for="adsoyad">Ad Soyad</label>
-        <input type="text" id="adsoyad" name="adsoyad" placeholder="Adınızı ve soyadınızı girin">
+        <input type="text" id="adsoyad" name="adsoyad" placeholder="Adınızı ve soyadınızı girin" required>
 
         <label for="email">E-posta</label>
-        <input type="email" id="email" name="email" placeholder="E-posta adresinizi girin">
+        <input type="email" id="email" name="email" placeholder="E-posta adresinizi girin" required>
 
         <label for="konu">Konu</label>
-        <select id="konu" name="konu">
+        <select id="konu" name="konu" required>
             <option value="">Konu seçiniz</option>
             <option value="is-teklifi">İş Teklifi</option>
             <option value="soru">Soru</option>
@@ -91,12 +91,17 @@ LinkedIn
         </select>
 
         <label for="mesaj">Mesaj</label>
-        <textarea id="mesaj" name="mesaj" rows="6" placeholder="Mesajınızı yazınız"></textarea>
+        <textarea id="mesaj" name="mesaj" rows="6" placeholder="Mesajınızı yazınız" required></textarea>
+
+        <div class="checkbox-group">
+            <input type="checkbox" id="onay" name="onay" required>
+            <label for="onay">Kişisel verilerimin işlenmesini kabul ediyorum.</label>
+        </div>
 
         <button type="submit">Gönder</button>
+
     </form>
 </div>
-
 <footer>
 <p>© 2026 Muhammet Enes Yıldırır | Tüm Hakları Saklıdır</p>
 </footer>
