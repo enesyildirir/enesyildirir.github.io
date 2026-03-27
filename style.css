@@ -107,7 +107,7 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* İletişim formu */
+/* form */
 .contact-container {
     width: 50%;
     max-width: 600px;
@@ -163,17 +163,6 @@ nav a:hover {
     background-color: #1d4ed8;
 }
 
-.checkbox-group {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 18px;
-}
-
-.checkbox-group input {
-    width: auto;
-}
-
 /* Footer */
 footer {
     background-color: #111827;
@@ -193,4 +182,61 @@ footer {
     margin-bottom: 12px;
     color: #374151;
     line-height: 1.6;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.option-box {
+    background-color: #f8fafc;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 12px 14px;
+    margin-bottom: 18px;
+}
+
+.inline-option {
+    display: block;
+    font-weight: normal !important;
+    margin-bottom: 8px;
+    color: #374151;
+}
+
+.inline-option input {
+    width: auto;
+    margin-right: 8px;
+    margin-bottom: 0;
+}
+
+.button-group {
+    display: flex;
+    gap: 12px;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.button-group button {
+    width: 48%;
+}
+
+.btn-submit {
+    background-color: #1677ff !important;
+}
+
+.btn-submit:hover {
+    background-color: #0f5fd1 !important;
+}
+
+.btn-reset {
+    background-color: #ef4444 !important;
+}
+
+.btn-reset:hover {
+    background-color: #dc2626 !important;
+}
+
+.info-list {
+    padding-left: 18px;
+    line-height: 1.8;
 }
