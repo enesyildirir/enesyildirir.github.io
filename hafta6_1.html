@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hafta 6.1 - Öğrenci Not Hesaplama</title>
+    <link rel="stylesheet" href="style_hafta6.css">
+</head>
+<body>
+
+    <header class="hero">
+        <h1>Uygulama-1</h1>
+        <p>
+            Kullanıcı web sayfasında form aracılığıyla Ad Soyad, Vize notu ve Final notunu girecek,
+            ortalama hesaplanıp harf notuna çevrilecek ve geçti/kaldı bilgisi gösterilecektir.
+        </p>
+    </header>
+
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="about.html">Hakkımda</a></li>
+            <li><a href="interests.html">İlgi Alanlarım</a></li>
+            <li><a href="contact.html">İletişim</a></li>
+            <li><a href="flex.html">Flex</a></li>
+            <li><a href="lab-position.html">Lab Position</a></li>
+            <li><a href="hafta6_1.html">Hafta 6.1</a></li>
+            <li><a href="hafta6_2.html">Hafta 6.2</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section class="content-box">
+            <h2>Öğrenci Not Hesaplama</h2>
+
+            <form id="notForm">
+                <div class="form-group">
+                    <input type="text" id="adSoyad" placeholder="Ad Soyad">
+                </div>
+
+                <div class="form-group">
+                    <input type="text" id="vize" placeholder="Vize Notu">
+                </div>
+
+                <div class="form-group">
+                    <input type="text" id="final" placeholder="Final Notu">
+                </div>
+
+                <button type="submit">Hesapla</button>
+            </form>
+
+            <div id="errorMesaji" class="error-box"></div>
+
+            <div class="result-box" id="sonucKutusu">
+                <h3 id="ogrenciAdi"></h3>
+                <p id="ortalamaYazisi"></p>
+                <p id="harfNotuYazisi"></p>
+                <p id="durumYazisi"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Muhammet Enes Yıldırır | Tüm Hakları Saklıdır</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

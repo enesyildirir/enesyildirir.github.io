@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.hero {
+    background: linear-gradient(135deg, #0077b6, #00b4d8);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.hero p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+nav {
+    background-color: #023e8a;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu li {
+    margin: 0;
+}
+
+.menu li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.menu li a:hover {
+    background-color: #0077b6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.content-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content-box h2 {
+    margin-top: 0;
+    font-size: 32px;
+    color: #111;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #023e8a;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0077b6;
+}
+
+.result-box {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-left: 5px solid #0077b6;
+    border-radius: 8px;
+    display: none;
+}
+
+.result-box h3 {
+    margin-top: 0;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.result-box p {
+    margin: 8px 0;
+    font-size: 24px;
+}
+.error-box {
+    color: red;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+footer {
+    text-align: center;
+    background-color: #023e8a;
+    color: white;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+
+/**/
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.form-group select {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+#sonucYazisi {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+}

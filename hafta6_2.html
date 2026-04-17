@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hafta 6.2 - Birim Dönüştürücü</title>
+    <link rel="stylesheet" href="style_hafta6.css">
+</head>
+<body>
+
+    <header class="hero">
+        <h1>Uygulama-2</h1>
+        <p>
+            Birim Dönüştürücü Uygulaması: Farklı mühendislik birimlerini birbirine dönüştüren
+            bir uygulama geliştirilecektir.
+        </p>
+    </header>
+
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="about.html">Hakkımda</a></li>
+            <li><a href="interests.html">İlgi Alanlarım</a></li>
+            <li><a href="contact.html">İletişim</a></li>
+            <li><a href="flex.html">Flex</a></li>
+            <li><a href="lab-position.html">Lab Position</a></li>
+            <li><a href="hafta6_1.html">Hafta 6.1</a></li>
+            <li><a href="hafta6_2.html">Hafta 6.2</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section class="content-box">
+            <h2>Birim Dönüştürücü</h2>
+
+            <form id="donusumForm">
+                <div class="form-group">
+                    <label for="deger">Değer Giriniz:</label>
+                    <input type="text" id="deger" placeholder="Örnek: 50">
+                </div>
+
+                <div class="form-group">
+                    <label for="donusumTipi">Dönüşüm Tipi:</label>
+                    <select id="donusumTipi">
+                        <option value="metre-kilometre">Metre -> Kilometre</option>
+                        <option value="kilometre-metre">Kilometre -> Metre</option>
+                        <option value="celsius-fahrenheit">Celsius -> Fahrenheit</option>
+                        <option value="fahrenheit-celsius">Fahrenheit -> Celsius</option>
+                        <option value="kilogram-gram">Kilogram -> Gram</option>
+                        <option value="gram-kilogram">Gram -> Kilogram</option>
+                    </select>
+                </div>
+
+                <button type="submit">Hesapla</button>
+            </form>
+
+            <div id="errorMesaji2" class="error-box"></div>
+
+            <div class="result-box" id="sonucKutusu2">
+                <p id="sonucYazisi"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Muhammet Enes Yıldırır | Tüm Hakları Saklıdır</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
