@@ -1,0 +1,147 @@
+/* =============================================
+   hafta7.css — Etkinlik Kayıt Sayfası
+   ============================================= */
+
+/* ── Değişkenler ── */
+:root {
+  --bg: #f8f9fb;
+  --bg-card: #ffffff;
+  --text: #1a1a2e;
+  --muted: #6b7280;
+  --border: #e5e7eb;
+  --primary: #4f46e5;
+  --primary-dark: #4338ca;
+  --footer-bg: #1a1a2e;
+}
+
+body.dark-theme {
+  --bg: #0f0f1a;
+  --bg-card: #1e1e35;
+  --text: #e8e8f0;
+  --muted: #9ca3af;
+  --border: #2e2e4a;
+  --primary: #7c73f5;
+  --primary-dark: #6c63ea;
+  --footer-bg: #08080f;
+}
+
+/* ── Temel ── */
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* ── Koyu temada Bootstrap yazı renglerini düzelt ── */
+body.dark-theme .text-muted,
+body.dark-theme .text-secondary,
+body.dark-theme small,
+body.dark-theme .small {
+  color: var(--muted) !important;
+}
+
+body.dark-theme p,
+body.dark-theme li,
+body.dark-theme label,
+body.dark-theme .card-text,
+body.dark-theme .form-label,
+body.dark-theme .form-check-label,
+body.dark-theme strong {
+  color: var(--text);
+}
+
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme h3,
+body.dark-theme h4,
+body.dark-theme h5,
+body.dark-theme .card-title {
+  color: var(--text);
+}
+
+body.dark-theme a:not(.btn):not(.navbar-brand):not(.nav-link):not(.footer-link) {
+  color: var(--primary);
+}
+
+/* ── Navbar ── */
+#mainNavbar {
+  background: var(--bg-card);
+  border-bottom: 1px solid var(--border);
+  transition: background 0.3s, border-color 0.3s;
+}
+
+.navbar-brand { color: var(--primary) !important; font-weight: 700; }
+.nav-link     { color: var(--text) !important; }
+.nav-link:hover { color: var(--primary) !important; }
+
+body.dark-theme .navbar-toggler-icon {
+  filter: invert(1);
+}
+
+/* ── Hero ── */
+.hero-section {
+  padding: 80px 0;
+  background: var(--bg);
+}
+
+/* ── Kartlar ── */
+.card {
+  background: var(--bg-card) !important;
+  border-color: var(--border) !important;
+  transition: background 0.3s, border-color 0.3s, transform 0.2s;
+}
+.event-card:hover { transform: translateY(-3px); }
+
+/* ── Form ── */
+.form-control,
+.form-select {
+  background-color: var(--bg-card) !important;
+  border-color: var(--border) !important;
+  color: var(--text) !important;
+}
+.form-control::placeholder { color: var(--muted); }
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--primary) !important;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15) !important;
+}
+.form-label { color: var(--text); }
+
+body.dark-theme .form-select option {
+  background-color: var(--bg-card);
+  color: var(--text);
+}
+
+/* ── Butonlar ── */
+.btn-primary {
+  background: var(--primary) !important;
+  border-color: var(--primary) !important;
+}
+.btn-primary:hover {
+  background: var(--primary-dark) !important;
+  border-color: var(--primary-dark) !important;
+}
+
+/* ── İstatistik kartları ── */
+.stat-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  transition: background 0.3s, border-color 0.3s;
+}
+.stat-number { font-size: 2rem; font-weight: 800; color: var(--primary); }
+.stat-label  { font-size: 0.8rem; color: var(--muted); }
+
+/* ── Sonuç kartı ── */
+.sonuc-kart {
+  background: var(--bg-card);
+  border: 1.5px solid var(--primary);
+  border-radius: 12px;
+  padding: 24px;
+  transition: background 0.3s;
+}
+
+/* ── Footer ── */
+.footer { background: var(--footer-bg); color: #9ca3af; }
+.footer-link { color: #9ca3af; text-decoration: none; }
+.footer-link:hover { color: #a5b4fc; }
